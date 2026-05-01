@@ -52,9 +52,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
     >
-      <body className="min-h-screen bg-[#09090B] text-zinc-50">{children}</body>
+      <body className="min-h-screen bg-[#09090B] text-zinc-50 overflow-x-hidden">{children}</body>
     </html>
   );
 }

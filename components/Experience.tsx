@@ -8,7 +8,7 @@ import { experiences } from "@/data/experience";
 
 export default function Experience() {
   return (
-    <section id="experience" className="section-padding relative">
+    <section id="experience" className="section-padding relative overflow-hidden">
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full blur-[150px] opacity-[0.05] bg-pink-500 pointer-events-none" />
       <div className="max-w-4xl mx-auto relative z-10">
         <ScrollReveal className="text-center mb-16">

@@ -10,7 +10,7 @@ import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-padding relative">
+    <section id="projects" className="section-padding relative overflow-hidden">
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full blur-[150px] opacity-[0.05] bg-cyan-500 pointer-events-none" />
       <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal className="text-center mb-16">

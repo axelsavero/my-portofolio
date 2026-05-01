@@ -37,7 +37,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding relative">
+    <section id="about" className="section-padding relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[150px] opacity-[0.07] bg-blue-500 pointer-events-none" />
 

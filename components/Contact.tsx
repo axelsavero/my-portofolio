@@ -52,7 +52,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding relative">
+    <section id="contact" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full blur-[150px] opacity-[0.05] bg-blue-500 pointer-events-none" />
       <div className="max-w-5xl mx-auto relative z-10">
         <ScrollReveal className="text-center mb-16">

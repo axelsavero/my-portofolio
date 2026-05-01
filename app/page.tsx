@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <ScrollProgress />
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <About />
         <TechStack />
