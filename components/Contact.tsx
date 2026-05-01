@@ -110,7 +110,7 @@ export default function Contact() {
 
           {/* Photo Section */}
           <ScrollReveal delay={0.2} className="h-full w-full flex justify-center items-center">
-            <div className="w-full max-w-[360px]">
+            <div className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[360px]">
               <ProfileCard
                 avatarUrl="/img/wmremove-transformed.jpeg"
                 iconUrl="/img/code-pattern.svg"

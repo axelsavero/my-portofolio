@@ -101,7 +101,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -121,9 +121,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4">
             <span className="text-white">Hi, I&apos;m </span>
-            <span className="gradient-text">
+            <span className="gradient-text break-words">
               <DecryptedText text="Muhammad Axel Savero Fikri" speed={40} />
             </span>
           </h1>
@@ -143,7 +143,7 @@ export default function Hero() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -40, opacity: 0 }}
               transition={{ duration: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
-              className="text-xl md:text-3xl font-medium text-zinc-400"
+              className="text-lg sm:text-xl md:text-3xl font-medium text-zinc-400"
             >
               {roles[roleIndex]}
             </motion.span>
