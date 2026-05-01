@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Doe — Fullstack Developer Portfolio",
+  title: "Muhammad Axel Savero Fikri — Fullstack Developer Portfolio",
   description:
     "Passionate Fullstack Developer specializing in modern web technologies. Building high-performance applications with React, Next.js, TypeScript, and more.",
   keywords: [
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     "TypeScript",
     "Portfolio",
   ],
-  authors: [{ name: "Alex Doe" }],
+  authors: [{ name: "Muhammad Axel Savero Fikri" }],
   openGraph: {
-    title: "Alex Doe — Fullstack Developer Portfolio",
+    title: "Muhammad Axel Savero Fikri — Fullstack Developer Portfolio",
     description:
       "Passionate Fullstack Developer building high-performance web applications.",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Doe — Fullstack Developer Portfolio",
+    title: "Muhammad Axel Savero Fikri — Fullstack Developer Portfolio",
     description:
       "Passionate Fullstack Developer building high-performance web applications.",
   },

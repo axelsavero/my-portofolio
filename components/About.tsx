@@ -26,19 +26,13 @@ const focusAreas = [
     description: "Optimizing data models and query performance",
     color: "#06B6D4",
   },
-  {
-    icon: Cloud,
-    title: "DevOps",
-    description: "Containerization, CI/CD, and cloud deployments",
-    color: "#EC4899",
-  },
 ];
 
 const stats = [
-  { label: "Years Experience", value: 3, suffix: "+" },
-  { label: "Projects Completed", value: 20, suffix: "+" },
-  { label: "Technologies", value: 14, suffix: "+" },
-  { label: "Clients & Teams", value: 10, suffix: "+" },
+  { label: "Years Experience", value: 1, suffix: "+" },
+  { label: "Projects Completed", value: 5, suffix: "+" },
+  { label: "Technologies", value: 16, suffix: "+" },
+  // { label: "Clients & Teams", value: 10, suffix: "+" },
 ];
 
 export default function About() {
@@ -67,7 +61,7 @@ export default function About() {
         </ScrollReveal>
 
         {/* Focus Areas Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
           {focusAreas.map((area, i) => (
             <ScrollReveal key={area.title} delay={i * 0.1}>
               <GlassCard className="p-6 h-full group">
@@ -91,7 +85,7 @@ export default function About() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {stats.map((stat, i) => (
             <ScrollReveal key={stat.label} delay={i * 0.1}>
               <GlassCard className="p-6 text-center group">

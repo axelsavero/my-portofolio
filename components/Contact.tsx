@@ -8,31 +8,32 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import AnimatedText from "@/components/ui/AnimatedText";
 import GlassCard from "@/components/ui/GlassCard";
 import MagneticButton from "@/components/ui/MagneticButton";
+import ProfileCard from "@/components/ui/ProfileCard";
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "developer@example.com",
-    href: "mailto:developer@example.com",
+    value: "muhammadaxel139@gmail.com",
+    href: "mailto:muhammadaxel139@gmail.com",
   },
   {
     icon: Phone,
     label: "WhatsApp",
-    value: "+62 812 3456 7890",
-    href: "https://wa.me/6281234567890",
+    value: "+62 813 8172 1708",
+    href: "https://wa.me/6281381721708",
   },
   {
     icon: GithubIcon,
     label: "GitHub",
-    value: "github.com/developer",
-    href: "https://github.com",
+    value: "github.com/axelsavero",
+    href: "https://github.com/axelsavero",
   },
   {
     icon: LinkedinIcon,
     label: "LinkedIn",
-    value: "linkedin.com/in/developer",
-    href: "https://linkedin.com",
+    value: "linkedin.com/in/axel-savero-01a8a7278/",
+    href: "https://www.linkedin.com/in/axel-savero-01a8a7278/",
   },
 ];
 
@@ -107,79 +108,18 @@ export default function Contact() {
             ))}
           </div>
 
-          {/* Contact Form */}
-          <ScrollReveal delay={0.2}>
-            <GlassCard className="p-6" hover={false}>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm text-zinc-400 mb-2"
-                  >
-                    Name
-                  </label>
-                  <input
-                    id="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-blue-500/30 focus:bg-white/[0.05] transition-all duration-300"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm text-zinc-400 mb-2"
-                  >
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-blue-500/30 focus:bg-white/[0.05] transition-all duration-300"
-                    placeholder="your@email.com"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm text-zinc-400 mb-2"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    value={formData.message}
-                    onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
-                    }
-                    className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-blue-500/30 focus:bg-white/[0.05] transition-all duration-300 resize-none"
-                    placeholder="Tell me about your project..."
-                    required
-                  />
-                </div>
-                <MagneticButton className="w-full">
-                  <motion.button
-                    type="submit"
-                    whileHover={{ scale: 1.01 }}
-                    whileTap={{ scale: 0.99 }}
-                    className="w-full py-3.5 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium text-sm flex items-center justify-center gap-2 hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition-shadow duration-300"
-                  >
-                    <Send size={16} /> Send Message
-                  </motion.button>
-                </MagneticButton>
-              </form>
-            </GlassCard>
+          {/* Photo Section */}
+          <ScrollReveal delay={0.2} className="h-full w-full flex justify-center items-center">
+            <div className="w-full max-w-[360px]">
+              <ProfileCard
+                avatarUrl="/img/wmremove-transformed.jpeg"
+                iconUrl="/img/code-pattern.svg"
+                name="M. Axel Savero F."
+                title="Fullstack Developer"
+                showUserInfo={false}
+                className="w-full"
+              />
+            </div>
           </ScrollReveal>
         </div>
       </div>

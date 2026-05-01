@@ -5,10 +5,10 @@ import { Mail, ArrowUp, Heart } from "lucide-react";
 import { GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/ui/Icons";
 
 const socialLinks = [
-  { icon: GithubIcon, href: "https://github.com", label: "GitHub" },
-  { icon: LinkedinIcon, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: InstagramIcon, href: "https://instagram.com", label: "Instagram" },
-  { icon: Mail, href: "mailto:developer@example.com", label: "Email" },
+  { icon: GithubIcon, href: "https://github.com/axelsavero", label: "GitHub" },
+  { icon: LinkedinIcon, href: "https://www.linkedin.com/in/axel-savero-01a8a7278/", label: "LinkedIn" },
+  { icon: InstagramIcon, href: "https://www.instagram.com/axelsvro/", label: "Instagram" },
+  { icon: Mail, href: "mailto:muhammadaxel139@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {
@@ -33,7 +33,7 @@ export default function Footer() {
             </a>
             <p className="text-zinc-600 text-sm flex items-center gap-1 justify-center md:justify-start">
               © {new Date().getFullYear()} Built with{" "}
-              <Heart size={12} className="text-red-400" /> by Alex Doe
+              <Heart size={12} className="text-red-400" /> by Muhammad Axel Savero Fikri
             </p>
           </div>
 

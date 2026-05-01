@@ -5,37 +5,39 @@ export interface TechItem {
 }
 
 export const techStack: TechItem[] = [
-  { name: "React", icon: "⚛️", color: "#61DAFB" },
-  { name: "Next.js", icon: "▲", color: "#ffffff" },
-  { name: "TypeScript", icon: "TS", color: "#3178C6" },
+  { name: "C++", icon: "⚙️", color: "#00599C" },
+  { name: "Python", icon: "🐍", color: "#3776AB" },
+  { name: "HTML", icon: "🌐", color: "#E34F26" },
+  { name: "CSS", icon: "🎨", color: "#1572B6" },
+  { name: "Javascript", icon: "JS", color: "#F7DF1E" },
+  { name: "Typescript", icon: "TS", color: "#3178C6" },
+  { name: "PHP", icon: "🐘", color: "#777BB4" },
   { name: "Laravel", icon: "◆", color: "#FF2D20" },
-  { name: "Node.js", icon: "⬢", color: "#339933" },
-  { name: "Express", icon: "Ex", color: "#ffffff" },
-  { name: "PostgreSQL", icon: "🐘", color: "#4169E1" },
-  { name: "MySQL", icon: "🐬", color: "#4479A1" },
-  { name: "Docker", icon: "🐳", color: "#2496ED" },
+  { name: "React.js", icon: "⚛️", color: "#61DAFB" },
+  { name: "Vue.js", icon: "V", color: "#4FC08D" },
+  { name: "Git", icon: "🌿", color: "#F05032" },
+  { name: "MySql", icon: "🐬", color: "#4479A1" },
   { name: "Tailwind", icon: "🌊", color: "#06B6D4" },
+  { name: "Kotlin", icon: "K", color: "#0095D5" },
   { name: "Flutter", icon: "◇", color: "#02569B" },
-  { name: "Rust", icon: "🦀", color: "#DEA584" },
-  { name: "GitHub", icon: "⚙️", color: "#ffffff" },
-  { name: "Linux", icon: "🐧", color: "#FCC624" },
+  { name: "Node.js", icon: "⬢", color: "#339933" },
 ];
 
 export const techCategories = [
   {
     title: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind", "Flutter"],
+    items: ["HTML", "CSS", "Javascript", "Typescript", "React.js", "Vue.js", "Tailwind"],
   },
   {
     title: "Backend",
-    items: ["Laravel", "Node.js", "Express", "Rust"],
+    items: ["PHP", "Laravel", "Node.js", "C++", "Python"],
   },
   {
     title: "Database",
-    items: ["PostgreSQL", "MySQL"],
+    items: ["MySql"],
   },
   {
-    title: "DevOps",
-    items: ["Docker", "GitHub", "Linux"],
+    title: "Mobile & Tools",
+    items: ["Kotlin", "Flutter", "Git"],
   },
 ];

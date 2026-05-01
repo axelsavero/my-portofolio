@@ -8,10 +8,8 @@ import DecryptedText from "@/components/ui/DecryptedText";
 import MagneticButton from "@/components/ui/MagneticButton";
 
 const roles = [
-  "Fullstack Developer",
-  "UI/UX Engineer",
-  "Problem Solver",
   "Tech Enthusiast",
+  "Fullstack Developer",
 ];
 
 export default function Hero() {
@@ -42,10 +40,10 @@ export default function Hero() {
   }, []);
 
   const socialLinks = [
-    { icon: GithubIcon, href: "https://github.com", label: "GitHub" },
-    { icon: LinkedinIcon, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: InstagramIcon, href: "https://instagram.com", label: "Instagram" },
-    { icon: Mail, href: "mailto:developer@example.com", label: "Email" },
+    { icon: GithubIcon, href: "https://github.com/axelsavero", label: "GitHub" },
+    { icon: LinkedinIcon, href: "https://www.linkedin.com/in/axel-savero-01a8a7278/", label: "LinkedIn" },
+    { icon: InstagramIcon, href: "https://www.instagram.com/axelsvro/", label: "Instagram" },
+    { icon: Mail, href: "mailto:muhammadaxel139@gmail.com", label: "Email" },
   ];
 
   return (
@@ -126,7 +124,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4">
             <span className="text-white">Hi, I&apos;m </span>
             <span className="gradient-text">
-              <DecryptedText text="Alex Doe" speed={40} />
+              <DecryptedText text="Muhammad Axel Savero Fikri" speed={40} />
             </span>
           </h1>
         </motion.div>
