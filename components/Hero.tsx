@@ -7,10 +7,7 @@ import { GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/ui/Icons";
 import DecryptedText from "@/components/ui/DecryptedText";
 import MagneticButton from "@/components/ui/MagneticButton";
 
-const roles = [
-  "Tech Enthusiast",
-  "Fullstack Developer",
-];
+const roles = ["Tech Enthusiast", "Fullstack Developer"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -40,9 +37,21 @@ export default function Hero() {
   }, []);
 
   const socialLinks = [
-    { icon: GithubIcon, href: "https://github.com/axelsavero", label: "GitHub" },
-    { icon: LinkedinIcon, href: "https://www.linkedin.com/in/axel-savero-01a8a7278/", label: "LinkedIn" },
-    { icon: InstagramIcon, href: "https://www.instagram.com/axelsvro/", label: "Instagram" },
+    {
+      icon: GithubIcon,
+      href: "https://github.com/axelsavero",
+      label: "GitHub",
+    },
+    {
+      icon: LinkedinIcon,
+      href: "https://www.linkedin.com/in/axel-savero-01a8a7278/",
+      label: "LinkedIn",
+    },
+    {
+      icon: InstagramIcon,
+      href: "https://www.instagram.com/axelsvro/",
+      label: "Instagram",
+    },
     { icon: Mail, href: "mailto:muhammadaxel139@gmail.com", label: "Email" },
   ];
 
@@ -194,6 +203,7 @@ export default function Hero() {
           <MagneticButton>
             <a
               href="/resume.pdf"
+              download="CV_Muhammad_Axel_Savero_Fikri.pdf"
               className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl
                 bg-white/[0.05] border border-white/[0.1]
                 text-zinc-300 font-medium text-sm
