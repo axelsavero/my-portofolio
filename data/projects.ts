@@ -4,54 +4,66 @@ export interface Project {
   description: string;
   image: string;
   techStack: string[];
-  github: string;
-  demo: string;
+  github?: string;
+  demo?: string;
+  isPrivate: boolean;
   featured: boolean;
+  isMobileApp?: boolean;
 }
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Job Portal Disability Platform",
+    title: "Sekolah Unggul Garuda Baru",
     description:
-      "An inclusive job portal platform designed to connect people with disabilities to accessible employment opportunities. Features advanced filtering, accessibility-first design, and employer matching system.",
-    image: "/projects/job-portal.png",
-    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+      "An integrated information system for SMA Unggulan Garuda Transformasi, designed to streamline the input and management of interview and microteaching assessment scores. Built as a monolithic architecture with Laravel and React for seamless performance.",
+    image: "/projects/garuda-baru.png",
+    techStack: ["Laravel", "React", "PHP", "Tailwind CSS", "TypeScript"],
+    isPrivate: true,
     featured: true,
   },
   {
     id: 2,
-    title: "Expense Tracker",
+    title: "SIMRISK — Risk Management System",
     description:
-      "Smart expense tracking application with AI-powered categorization, visual analytics dashboards, budget planning, and multi-currency support for personal and team finance management.",
-    image: "/projects/expense-tracker.png",
-    techStack: ["React", "Node.js", "Express", "MySQL"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+      "A comprehensive web-based risk management application tailored for university environments. SimRisk enables systematic identification, assessment, mitigation, and monitoring of institutional risks with a robust, multi-level workflow approval system.",
+    image: "/projects/simrisk.png",
+    techStack: ["Laravel", "React", "TypeScript", "Shadcn UI", "Tailwind CSS"],
+    isPrivate: true,
     featured: true,
   },
   {
     id: 3,
-    title: "AI Dashboard",
+    title: "SIAKAD V3 — Academic Information System",
     description:
-      "Intelligent analytics dashboard powered by machine learning. Real-time data visualization, predictive insights, anomaly detection, and automated reporting for business intelligence.",
-    image: "/projects/ai-dashboard.png",
-    techStack: ["Next.js", "TypeScript", "Docker", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
-    featured: false,
+      "The next-generation Academic Information System (SIAKAD) for Universitas Negeri Jakarta. Serves as a centralized platform for academic data processing, scheduling, and communication between students, lecturers, and campus units.",
+    image: "/projects/siakad-v3.png",
+    techStack: ["Nuxt.js", "Vue.js", "TypeScript", "Nuxt UI"],
+    isPrivate: true,
+    featured: true,
   },
   {
     id: 4,
-    title: "E-Commerce Analytics",
+    title: "Poke Pedia",
     description:
-      "Comprehensive e-commerce analytics platform with real-time sales tracking, customer behavior analysis, inventory optimization, and revenue forecasting using advanced data pipelines.",
-    image: "/projects/ecommerce-analytics.png",
-    techStack: ["Laravel", "React", "Tailwind", "MySQL"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+      "An interactive Pokémon encyclopedia that lets users explore detailed statistics, types, abilities, and evolution chains for every Pokémon. Features real-time search, responsive card layouts, and data fetched from the PokéAPI.",
+    image: "/projects/pokepedia.png",
+    techStack: ["React", "Tailwind CSS"],
+    github: "https://github.com/axelsavero/pokemon-react",
+    demo: "https://pokemon-react-taupe.vercel.app/",
+    isPrivate: false,
     featured: false,
+  },
+  {
+    id: 5,
+    title: "Duitku — Finance Manager",
+    description:
+      "A sleek personal finance management app built with Kotlin for Android. Track income and expenses, visualize spending patterns with intuitive statistics, and take full control of your financial health — all from the palm of your hand.",
+    image: "/projects/duitku.png",
+    techStack: ["Kotlin"],
+    github: "https://github.com/axelsavero/duitku",
+    isPrivate: false,
+    featured: false,
+    isMobileApp: true,
   },
 ];

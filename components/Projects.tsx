@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Lock } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ui/ScrollReveal";
@@ -44,11 +44,21 @@ export default function Projects() {
               >
                 <div className="p-6">
                   {/* Project Image */}
-                  <div className="relative w-full h-48 md:h-56 rounded-xl overflow-hidden mb-6 bg-gradient-to-br from-white/[0.02] to-white/[0.05]">
+                  <div
+                    className={`relative w-full rounded-xl overflow-hidden mb-6 bg-gradient-to-br from-white/[0.02] to-white/[0.05] ${
+                      project.isMobileApp
+                        ? "h-72 md:h-80 flex items-center justify-center"
+                        : "h-48 md:h-56"
+                    }`}
+                  >
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      className={`transition-transform duration-700 group-hover:scale-105 ${
+                        project.isMobileApp
+                          ? "h-full w-auto object-contain mx-auto rounded-xl"
+                          : "w-full h-full object-cover object-top"
+                      }`}
                       loading="lazy"
                     />
                     {/* Hover overlay */}
@@ -77,26 +87,41 @@ export default function Projects() {
 
                   {/* Links */}
                   <div className="flex items-center gap-3">
-                    <motion.a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-4 py-2 text-sm rounded-xl bg-white/[0.05] border border-white/[0.08] text-zinc-400 hover:text-white hover:bg-white/[0.1] transition-all duration-300"
-                    >
-                      <GithubIcon size={14} /> Code
-                    </motion.a>
-                    <motion.a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-4 py-2 text-sm rounded-xl bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 text-blue-400 hover:text-blue-300 hover:from-blue-500/20 hover:to-cyan-500/20 transition-all duration-300"
-                    >
-                      <ExternalLink size={14} /> Demo
-                    </motion.a>
+                    {project.isPrivate ? (
+                      <motion.span
+                        whileHover={{ y: -2 }}
+                        className="flex items-center gap-2 px-4 py-2 text-sm rounded-xl bg-white/[0.03] border border-white/[0.06] text-zinc-600 cursor-not-allowed select-none"
+                      >
+                        <GithubIcon size={14} />
+                        Code
+                        <Lock size={12} className="ml-0.5" />
+                        <span className="text-xs text-zinc-600">(Private)</span>
+                      </motion.span>
+                    ) : (
+                      <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center gap-2 px-4 py-2 text-sm rounded-xl bg-white/[0.05] border border-white/[0.08] text-zinc-400 hover:text-white hover:bg-white/[0.1] transition-all duration-300"
+                      >
+                        <GithubIcon size={14} /> Code
+                      </motion.a>
+                    )}
+
+                    {project.demo && (
+                      <motion.a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center gap-2 px-4 py-2 text-sm rounded-xl bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 text-blue-400 hover:text-blue-300 hover:from-blue-500/20 hover:to-cyan-500/20 transition-all duration-300"
+                      >
+                        <ExternalLink size={14} /> Demo
+                      </motion.a>
+                    )}
                   </div>
                 </div>
               </SpotlightCard>
