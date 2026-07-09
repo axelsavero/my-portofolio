@@ -202,7 +202,7 @@ export default function Hero() {
           </MagneticButton>
           <MagneticButton>
             <a
-              href="/resume.pdf"
+              href="/CV_Muhammad Axel Savero Fikri.pdf"
               download="CV_Muhammad_Axel_Savero_Fikri.pdf"
               className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl
                 bg-white/[0.05] border border-white/[0.1]
